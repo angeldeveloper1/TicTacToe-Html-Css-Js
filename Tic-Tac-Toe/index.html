@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      TicTacToe
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image-icon.png" type="image/x-icon">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="game-container">
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+        <div class="game-cell js-game-cell"></div>
+      </div>
+      <h2 class="js-game-notification"></h2>
+      <button class="game-restart js-game-restart">Restart</button>
+      <audio id="background-music" autoplay loop>
+        <source src="music-game.mp3" type="audio/mp3">
+      </audio>
+      <button id="toggle-button"><img src="turn-on.png" class="turn-on-volume"></button>
+    </div>
+
+    
+
+    <script src="tictactoe.js"></script>
+
+  </body>
+</html>
