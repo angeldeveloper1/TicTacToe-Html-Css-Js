@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>
       TicTacToe
     </title>
+    <!-- External stylesheet and favicon -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image-icon.png" type="image/x-icon">
   </head>
   <body>
-    
+    <!-- Main container for the Tic Tac Toe game -->
     <div class="container">
+      <!-- Title of the game -->
       <h1>Tic Tac Toe</h1>
+      <!-- Container for the Tic Tac Toe game grid -->
       <div class="game-container">
+        <!-- Game cells (div elements representing each cell) -->
         <div class="game-cell js-game-cell"></div>
         <div class="game-cell js-game-cell"></div>
         <div class="game-cell js-game-cell"></div>
@@ -24,16 +30,19 @@
         <div class="game-cell js-game-cell"></div>
         <div class="game-cell js-game-cell"></div>
       </div>
+      <!-- Notification area for game status -->
       <h2 class="js-game-notification"></h2>
+      <!-- Restart button to reset the game -->
       <button class="game-restart js-game-restart">Restart</button>
+      <!-- Background music with audio controls -->
       <audio id="background-music" autoplay loop>
         <source src="music-game.mp3" type="audio/mp3">
       </audio>
+      <!-- Button to toggle background music on/off -->
       <button id="toggle-button"><img src="turn-on.png" class="turn-on-volume"></button>
     </div>
 
-    
-
+    <!-- JavaScript file for game logic -->
     <script src="tictactoe.js"></script>
 
   </body>
